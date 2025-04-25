@@ -1,0 +1,128 @@
+/* Calculator1.css */
+
+.cal-body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-image: linear-gradient(to bottom, #8dcff6 0%, #aefdbd 100%); 
+height: 100vh;
+}
+
+
+
+.cal-body select{
+ 
+  font-size: 18px;
+  padding: 8px ;
+border: none;
+outline: none;
+border-radius: 3px;
+
+}
+
+
+  .calculator-container {
+    
+    background-image: linear-gradient(to bottom, #8dcff6 0%, #aefdbd 100%); 
+       border-radius: 15px;
+    /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); */
+    padding: 30px;
+    width: 100%;
+    max-width: 80%;
+    height: fit-content;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .calculator-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fcfcfc;
+ margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+margin-left: -5px;
+  } 
+  
+  .form-field {
+    position: relative;
+  }
+  
+
+  label {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+}
+  
+  input {
+    width: 95%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+  }
+  
+  input::placeholder {
+    color: #bbb;
+  }
+  
+  button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #21b437;
+  }
+  
+  .error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    position: absolute;
+    bottom: -31px;
+    left: 0;
+  }
+  
+  form button {
+    margin-top: 20px;
+  }
+  
+  .result {
+    margin-top:15px ;
+    color: rgb(48, 49, 48);
+    font-weight: bold;
+    font-size: 18px;
+    
+  }
+ 
+  .result p {
+margin-top:15px ;
+
+  }
+  
