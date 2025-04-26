@@ -28,17 +28,20 @@
 
 @media (max-width: 600px) {
     .logoImg {
-      width: 100px !important; /* Adjust size */
-      height: auto !important;
-      display: block !important; /* Ensure it's visible */
+      /* width: 100px !important; */
+      /* height: auto !important;
+      display: block !important; */
+
 
     }
     .logo-pic-menu {
-      width: 70px !important;
-      /* top: -3px !important ; */
+      width: 65px !important;
+      top: -4px !important ;
 
     }
-    .css-1ygil4i-MuiToolbar-root {
+   
+   
+    /* .css-1ygil4i-MuiToolbar-root {
       height: 90px;
     }
     .css-1umw9bq-MuiSvgIcon-root {
@@ -49,13 +52,16 @@
   .css-rizt0-MuiTypography-root{
    font-size: 25px !important;
    text-decoration: underline;
-   text-decoration-thickness: 3px; /* Thickness of the underline */
-   text-decoration-color: rgb(37, 247, 0); /* Color of the underline */
+   text-decoration-thickness: 3px; 
+   text-decoration-color: rgb(37, 247, 0); 
    text-underline-offset: 10px;
    color: blue;
 
+  } */
   }
-  }
+
+ 
+ 
 
   
 

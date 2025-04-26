@@ -17,7 +17,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { loanLogoPic } from '../../utils/constant/pic.js';
-import './M.css'
+import './M.css';
+
 
 const drawerWidth = 240;
 const navItems = [
@@ -68,8 +69,13 @@ function DrawerAppBar(props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
-            <MenuIcon />
-          </IconButton>
+ <MenuIcon
+    sx={{
+      // ✅ Make the icon big on mobile
+      fontSize: { xs: '60px', sm: '40px' }, // big on mobile, normal on larger screens
+      color: '#fff', // optional: enforce white color
+    }}
+  />          </IconButton>
           <Typography className='navbarPic' variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
             <img className='logoImg' src={loanLogoPic} alt="" />
           </Typography>
@@ -85,21 +91,60 @@ function DrawerAppBar(props) {
         </Toolbar>
       </AppBar>
       <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-          }}
-        >
-          {drawer}
-        </Drawer>
+      <Drawer
+  container={container}
+  variant="temporary"
+  open={mobileOpen}
+  onClose={handleDrawerToggle}
+  ModalProps={{
+    keepMounted: true,
+  }}
+  sx={{
+    display: { xs: 'block', sm: 'none' },
+    '& .MuiDrawer-paper': {
+      width: drawerWidth,
+      background: '  rgb(255, 255, 255)',
+      padding: '20px 10px',
+      boxSizing: 'border-box',
+      borderRight: '1px solid #ccc',
+    },
+  }}
+>
+  <Box sx={{ textAlign: 'center' }}>
+    <Typography variant="h6" sx={{ my: 2 }}>
+      Menu
+    </Typography>
+    <Divider />
+    <List>
+      {navItems.map((item, index) => (
+        <ListItem key={item.name} disablePadding> 
+          <ListItemButton sx={{ textAlign: 'center' }}>
+            <Link
+              to={item.path}
+              style={{
+                textDecoration: 'none',
+                color: 'white',
+                width: '100%',
+                display: 'block',
+                padding: '10px 0px',
+                fontWeight: '600',
+                fontSize: '16px',
+                background: '  rgba(25, 107, 222, 0.921)',
+                border: '4px solid  rgb(38, 255, 0)',
+                borderRadius: '5px'
+
+
+              }}
+            >
+              {item.name}
+            </Link>
+          </ListItemButton>
+        </ListItem>
+      ))}
+    </List>
+  </Box>
+</Drawer>
+
       </nav>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
