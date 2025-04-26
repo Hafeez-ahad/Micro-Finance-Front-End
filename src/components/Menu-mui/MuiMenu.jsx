@@ -17,7 +17,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { loanLogoPic } from '../../utils/constant/pic.js';
-import './Menu.css'
 
 
 const drawerWidth = 240;
