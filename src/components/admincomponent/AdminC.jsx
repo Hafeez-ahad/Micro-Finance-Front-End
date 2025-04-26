@@ -116,6 +116,7 @@ const AdminC = () => {
             onRejectData={getingDataFoReject}
             logoutFunction={logoutfun}
           />
+          {/* FOR DELETTION BY ADMIN  */}
           <AdminDeleteSetup  />
         </>
       )}

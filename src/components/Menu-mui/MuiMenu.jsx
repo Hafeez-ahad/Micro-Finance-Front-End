@@ -19,7 +19,8 @@ import Button from '@mui/material/Button';
 import { loanLogoPic } from '../../utils/constant/pic.js';
 import './Menu.css';
 
-const drawerWidth = 239;
+
+const drawerWidth = 240;
 const navItems = [
   { name: 'Calulator', path: '/loancalculator' },
   { name: 'Status', path: '/userstatusById' },

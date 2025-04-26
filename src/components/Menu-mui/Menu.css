@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* hel  hdgf */
 }
 .logoImg{
     background-color: rgb(0, 255, 38);
     border: 3px solid rgb(255, 255, 255);
     border-radius:100%;
-    width: 79.5px;
+    width: 80px;
     padding: 5px;
     text-align: center;
     margin-top: 8px;
@@ -27,9 +28,9 @@
 
 @media (max-width: 600px) {
     .logoImg {
-      width: 100px; /* Adjust size */
-      height: auto;
-      display: block; /* Ensure it's visible */
+      width: 100px !important; /* Adjust size */
+      height: auto !important;
+      display: block !important; /* Ensure it's visible */
 
     }
     .logo-pic-menu {
@@ -48,11 +49,7 @@
    
     display: none;
 }
-/* .css-xi606m {
-  text-align: left;
-  background-color: rgb(100, 100, 245);
-  height: 100vh;
-} */
+
   .css-rizt0-MuiTypography-root{
    font-size: 25px !important;
    text-decoration: underline;
